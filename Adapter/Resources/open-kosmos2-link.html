@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kosmos Adapter V2 - Link Aç</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; max-width: 600px; margin: 40px auto; padding: 20px; }
+        .kosmos { display: inline-block; margin: 16px 0; padding: 12px 24px; background: #0078d4; color: white; text-decoration: none; border-radius: 6px; border: none; font-size: 16px; cursor: pointer; }
+        .kosmos:hover { background: #106ebe; }
+        .note { color: #666; font-size: 14px; margin-top: 24px; }
+        code { background: #eee; padding: 2px 6px; }
+    </style>
+</head>
+<body>
+    <h1>Kosmos Adapter V2</h1>
+    <p><strong>Önce</strong> Kosmos Adapter V2 uygulamasını en az bir kez çalıştırın (exe'ye çift tıklayın). Böylece <code>kosmos2</code> protokolü Windows'a kaydedilir.</p>
+    <p>Aşağıdaki butona tıklayın — uygulama açılacaktır.</p>
+    <button type="button" class="kosmos" id="openBtn">Kosmos Adapter ile Aç (Fotoğraf)</button>
+    <p class="note">Tıklayınca tarayıcı "KosmosAdapterV2 ile açılsın mı?" diye sorabilir — <strong>Aç / Evet</strong> deyin. Hiçbir şey olmuyorsa uygulamayı önce bir kez çalıştırıp tekrar deneyin.</p>
+    <script>
+        var url = "kosmos2://backoffice-api.rancher-test.kosmoslocal.local:8080/api/?cid=2091459&secret=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEzNzAiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiRXNtYSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6ImVzbWEub3JhbiIsImh0dHBzOi8va29zbW9zdml6ZS5jb20udHIvaWRlbnRpdHkvY2xhaW1zL2RlYWxlci1pZCI6IjEiLCJuYmYiOjE3NzMxNDYxMzEsImV4cCI6MTc3MzE4OTMzMSwiaXNzIjoiU2FuYWxvZ1Rva2VucyIsImF1ZCI6IlNhbmFsb2dUb2tlbnMifQ.Pty6odJtwPL8E6ATBNYZnoqTFQHPKuJXi7V_Q7Qx-GI&type=tw";
+        document.getElementById("openBtn").onclick = function () { window.location.href = url; };
+    </script>
+</body>
+</html>

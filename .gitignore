@@ -1,0 +1,59 @@
+###############################################################################
+# Genel
+###############################################################################
+
+# OS / editor geçicileri
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+*.bak
+*.orig
+
+# Rider / ReSharper / VSCode / VS
+.idea/
+.vs/
+.vscode/
+*.DotSettings.user
+
+###############################################################################
+# .NET / C# build çıktıları
+###############################################################################
+
+# Global
+bin/
+obj/
+
+# Çözüm içi proje klasörleri (ek güvenlik için)
+Adapter/bin/
+Adapter/obj/
+
+# Paketler / cache
+packages/
+*.nupkg
+*.snupkg
+*.nuget.props
+*.nuget.targets
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+###############################################################################
+# Kullanıcı / makineye özel dosyalar
+###############################################################################
+
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+*.userprefs
+
+###############################################################################
+# Log / geçici çıktı
+###############################################################################
+
+logs/
+*.log
+*.cache
+*.tmp.*
+
